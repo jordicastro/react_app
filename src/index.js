@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-class Square extends React.Component {
+class Square extends React.Component // square component renders a single <button> and 
+{
     render() {
       return (
         <button className="square">
@@ -12,7 +13,8 @@ class Square extends React.Component {
     }
   }
   
-  class Board extends React.Component {
+  class Board extends React.Component // board component renders 9 squares
+  {
     renderSquare(i) {
       return <Square />;
     }
